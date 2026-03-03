@@ -1,5 +1,7 @@
 merlinquantum==0.3.1
 perceval-quandela==1.1.0
 
-dotenv==0.9.9
-python-dotenv==1.2.2
+dotenv==0.9.9 # not needed
+python-dotenv==1.2.2 # not needed
+
+ipywidgets # you need it to display the progress bar
