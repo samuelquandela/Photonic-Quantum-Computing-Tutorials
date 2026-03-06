@@ -9,6 +9,10 @@ The tutorials are organised into two main areas:
 * **Photonics-Perceval** — Tutorials using the Perceval library for modelling and simulating photonic quantum circuits.
 * **Quantum_Machine_Learning-MerLin** — Tutorials combining MerLin and PyTorch for quantum machine learning applications built on photonic quantum computing principles.
 
+Official MerLin documentation: https://merlinquantum.ai/
+
+Official Perceval documentation: https://perceval.quandela.net/
+
 ---
 
 ## Repository Structure
