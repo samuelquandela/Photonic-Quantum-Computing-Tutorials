@@ -246,6 +246,17 @@ def main() -> None:
         )
         log_figure(run, "data/sample_images", image_fig)
 
+        # Save selected images as CSV artifacts (same format as feature CSVs).
+        log_features_as_csv_artifact(
+            run,
+            artifact_name="mnist-selected-images",
+            output_dir=output_dir / "images",
+            arrays={
+                "X_train_pixels": (X_train_pixels, y_train_np),
+                "X_test_pixels": (X_test_pixels, y_test_np),
+            },
+        )
+
         # 2) PCA + min-max scaling.
         pca = PCA(n_components=N_QFEATURES, random_state=123)
         X_train_pca = pca.fit_transform(X_train_pixels)
